@@ -1,0 +1,43 @@
+.menu ul {
+    list-style: none;
+    color: rgb(31, 31, 194);
+}
+
+.menu li {
+    display: inline;
+}
+
+.navbar {
+    background-color: rgb(150, 150, 76);
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 0;
+}
+
+.menu a {
+    text-decoration: none;
+    text-transform: uppercase;
+    margin: 10px;
+    color: rgb(8, 8, 8);
+    font-size: 15px;
+}
+
+.menu li a:hover {
+    border-bottom: solid 2px #14140a;
+    cursor: pointer;
+}
+
+.footer {
+    background-color: #f1f1f1;
+    padding: 10px 0;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
