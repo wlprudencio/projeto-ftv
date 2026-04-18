@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<body class="d-flex align-items-center py-4 bg-body-tertiary">
+
+<main class="w-75 m-auto">
+
+    <form th:object="${aluno}" th:action="@{/alunos}" method="post" class="needs-validation">
+
+        <h2 class="h3 mb-3 fw-normal text-center w-100">CADASTRO DO ALUNO</h2>
+
+        <div class="mb-2 row">
+            <label for="nomeCompleto" class="col-2 col-form-label">Nome Completo:</label>
+            <div class="col-8">
+                <input type="text" th:field="*{nomeCompleto}" id="nomeCompleto" class="form-control" placeholder="Digite seu Nome Completo:" required>
+            </div>
+        </div>
+
+        <div class="mb-2 row">
+            <label for="cpf" class="col-2 col-form-label">Cpf:</label>
+            <div class="col-8">
+                <input type="text" th:field="*{cpf}" id="cpf" class="form-control" placeholder="Digite seu CPF:" required>
+            </div>
+        </div>
+
+        <div class="mb-2 row">
+            <label for="email" class="col-2 col-form-label">Email:</label>
+            <div class="col-8">
+                <input type="text" th:field="*{email}" id="email" class="form-control" placeholder="Digite seu email:" required>
+            </div>
+        </div>
+
+        <div class="mb-2 row">
+            <label for="senha" class="col-2 col-form-label">Senha:</label>
+            <div class="col-8">
+                <input type="password" th:field="*{senha}" id="senha" class="form-control" placeholder="Digite sua senha:" required>
+            </div>
+        </div>
+
+
+        <div class="mb-2 row">
+            <div class="col-8 offset-2">
+                <button type="submit" class="btn btn-primary">Cadastrar</button>
+            </div>
+        </div>
+
+    </form>
+</main>
+</body>
+</html>
