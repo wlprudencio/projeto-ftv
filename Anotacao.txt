@@ -1,0 +1,5 @@
+Anotação.1
+- Fazer refatoração do projeto;
+- Atualizar ele todo;
+- usar docker;
+- mudar de banco de dados (MSQL);

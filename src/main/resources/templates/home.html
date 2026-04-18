@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR" xmlns:th="http://www.thymeleaf.org">
+
+<head th:fragment="head">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CT FUTVOLEI</title>
+    <link rel="stylesheet" th:href="@{/styles/menu.css}">
+    <link rel="stylesheet" th:href="@{/styles/formAluno.css}">
+</head>
+
+<body>
+
+<header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light" th:fragment="menu">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">CT FUTVOLEI</a>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" th:href="@{/alunos/cadastro}">Cadastro Aluno</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" th:href="@{/agendamento}">Agendamento</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" th:href="@{/login}">Login</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<footer>
+    <div class="footer">
+        <p> CT FUTVOLEI 2024. Um lugar de sorrisos e aprendizado</p>
+    </div>
+</footer>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha384-KyZXEAg3QhqLMpG8r+Knujsl5+GYU4RA14f9GqI1Ew5Y/c+U5fBzXwEslVYn8K/p" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXlQ8rR8s7g4K+4d8q0np0y5F4/ELd1kjqPVgyFjqmLbN/z0nGQ3xz7wh/RN" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+rCYA8h8r5UELrI2iFEnBiF4I9EUUj3F4dZp8CAtp69T9fMdB" crossorigin="anonymous"></script>
+
+</body>
+</html>
